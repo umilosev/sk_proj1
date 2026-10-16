@@ -129,6 +129,22 @@ public class LocalRepositoryStorageProvider implements RepositoryStorageProvider
         }
     }
 
+
+    @Override
+    public ArtifactMetadata fetchMetadata(String repoPath, Artifact artifact) throws RepositoryException {
+        Path metaFile = Paths.get(repoPath, artifact.toPath(), artifact.getArtifactId() + "-" + artifact.getVersion() + ".json");
+        if (!Files.exists(metaFile)) {
+            throw new RepositoryException("Metadata file not found for artifact: " + artifact);
+        }
+
+        try {
+            String jsonStr = Files.readString(metaFile);
+            return deserializeMetadata(jsonStr);
+        } catch (IOException e) {
+            throw new RepositoryException("Failed to read metadata for artifact: " + artifact, e);
+        }
+    }
+
     // Direct JSON serialization helper
     private String serializeMetadata(ArtifactMetadata meta) {
         StringBuilder sb = new StringBuilder();
@@ -154,6 +170,37 @@ public class LocalRepositoryStorageProvider implements RepositoryStorageProvider
         sb.append("  ]\n");
         sb.append("}");
         return sb.toString();
+    }
+
+    // Lightweight manual JSON parser
+    private ArtifactMetadata deserializeMetadata(String json) {
+        String groupId = extractValue(json, "groupId");
+        String artifactId = extractValue(json, "artifactId");
+        String version = extractValue(json, "version");
+        String extension = extractValue(json, "extension");
+
+        Artifact artifact = new Artifact(groupId, artifactId, version);
+        List<Dependency> deps = new ArrayList<>();
+
+        if (json.contains("\"dependencies\":")) {
+            String depsArray = json.substring(json.indexOf("\"dependencies\":"));
+            String[] blocks = depsArray.split("\\{");
+
+            for (int i = 1; i < blocks.length; i++) {
+                String block = blocks[i];
+                String dGroup = extractValue(block, "groupId");
+                String dArt = extractValue(block, "artifactId");
+                String dVer = extractValue(block, "version");
+                String dScope = extractValue(block, "scope");
+                boolean dOpt = Boolean.parseBoolean(extractValue(block, "optional"));
+
+                if (dGroup != null && dArt != null && dVer != null) {
+                    deps.add(new Dependency(new Artifact(dGroup, dArt, dVer), dScope, dOpt));
+                }
+            }
+        }
+
+        return new ArtifactMetadata(artifact, extension, deps);
     }
 
     private String extractValue(String json, String key) {
