@@ -145,6 +145,35 @@ public class LocalRepositoryStorageProvider implements RepositoryStorageProvider
         }
     }
 
+
+    @Override
+    public List<String> listProjects(String repoPath, String groupId) throws RepositoryException {
+        Path groupPath = Paths.get(repoPath, groupId.replace('.', '/'));
+        if (!Files.exists(groupPath)) return Collections.emptyList();
+
+        try (Stream<Path> stream = Files.list(groupPath)) {
+            return stream.filter(Files::isDirectory)
+                    .map(p -> p.getFileName().toString())
+                    .collect(Collectors.toList());
+        } catch (IOException e) {
+            throw new RepositoryException("Failed to list projects for groupId: " + groupId, e);
+        }
+    }
+
+    @Override
+    public List<String> listVersions(String repoPath, String groupId, String artifactId) throws RepositoryException {
+        Path projectPath = Paths.get(repoPath, groupId.replace('.', '/'), artifactId);
+        if (!Files.exists(projectPath)) return Collections.emptyList();
+
+        try (Stream<Path> stream = Files.list(projectPath)) {
+            return stream.filter(Files::isDirectory)
+                    .map(p -> p.getFileName().toString())
+                    .collect(Collectors.toList());
+        } catch (IOException e) {
+            throw new RepositoryException("Failed to list versions for project: " + artifactId, e);
+        }
+    }
+
     // Direct JSON serialization helper
     private String serializeMetadata(ArtifactMetadata meta) {
         StringBuilder sb = new StringBuilder();
