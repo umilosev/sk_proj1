@@ -1,6 +1,6 @@
-package api;
+package model;
 
-import api.artifact.Artifact;
+import model.artifact.Artifact;
 import lombok.Getter;
 
 @Getter

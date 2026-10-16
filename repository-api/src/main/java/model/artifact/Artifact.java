@@ -1,4 +1,4 @@
-package api.artifact;
+package model.artifact;
 
 import lombok.Getter;
 
