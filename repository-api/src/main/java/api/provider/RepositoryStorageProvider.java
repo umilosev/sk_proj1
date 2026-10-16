@@ -1,7 +1,7 @@
 package api.provider;
 
-import api.artifact.Artifact;
-import api.artifact.ArtifactMetadata;
+import model.artifact.Artifact;
+import model.artifact.ArtifactMetadata;
 import api.exception.RepositoryException;
 import config.RepositoryConfig;
 

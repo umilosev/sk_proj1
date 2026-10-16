@@ -1,6 +1,6 @@
-package api.artifact;
+package model.artifact;
 
-import api.Dependency;
+import model.Dependency;
 import lombok.Getter;
 
 import java.util.List;
