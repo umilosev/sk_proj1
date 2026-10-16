@@ -13,15 +13,6 @@
         <option name="myGradleHome" value="" />
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/publisher-cli" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/publisher-cli" />
-          </set>
-        </option>
-        <option name="myGradleHome" value="" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/repository-api" />
         <option name="modules">
           <set>
@@ -35,24 +26,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/repository-core" />
-          </set>
-        </option>
-        <option name="myGradleHome" value="" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/resolver-cli" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/resolver-cli" />
-          </set>
-        </option>
-        <option name="myGradleHome" value="" />
-      </GradleProjectSettings>
-      <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/storage-local" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/storage-local" />
           </set>
         </option>
         <option name="myGradleHome" value="" />
