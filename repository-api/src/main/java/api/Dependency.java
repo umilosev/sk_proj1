@@ -1,5 +1,6 @@
 package api;
 
+import api.artifact.Artifact;
 import lombok.Getter;
 
 @Getter
