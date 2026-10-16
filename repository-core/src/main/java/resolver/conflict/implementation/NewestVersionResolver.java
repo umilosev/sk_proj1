@@ -1,7 +1,7 @@
-package resolver.implementation;
+package resolver.conflict.implementation;
 
 import model.artifact.Artifact;
-import resolver.ConflictResolver;
+import resolver.conflict.ConflictResolver;
 
 import java.util.List;
 import java.util.Map;
