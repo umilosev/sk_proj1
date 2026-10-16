@@ -1,4 +1,4 @@
-package resolver;
+package resolver.conflict;
 
 import model.artifact.Artifact;
 
