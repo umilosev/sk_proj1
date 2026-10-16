@@ -94,10 +94,67 @@ public class LocalRepositoryStorageProvider implements RepositoryStorageProvider
     }
 
 
+    @Override
+    public void publishArtifact(String repoPath, Artifact artifact, InputStream fileStream, ArtifactMetadata metadata) throws RepositoryException {
+        try {
+            Path targetDir = Paths.get(repoPath, artifact.toPath());
+            Files.createDirectories(targetDir);
+
+            // 1. Save artifact binary file
+            String fileName = artifact.getFileName(metadata.getExtension());
+            Path targetFile = targetDir.resolve(fileName);
+            Files.copy(fileStream, targetFile, StandardCopyOption.REPLACE_EXISTING);
+
+            // 2. Save metadata JSON
+            Path metaFile = targetDir.resolve(artifact.getArtifactId() + "-" + artifact.getVersion() + ".json");
+            String jsonContent = serializeMetadata(metadata);
+            Files.writeString(metaFile, jsonContent, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
+
+        } catch (IOException e) {
+            throw new RepositoryException("Failed to publish artifact: " + artifact, e);
+        }
+    }
 
 
+    @Override
+    public InputStream fetchArtifact(String repoPath, Artifact artifact, String extension) throws RepositoryException {
+        Path filePath = Paths.get(repoPath, artifact.toPath(), artifact.getFileName(extension));
+        if (!Files.exists(filePath)) {
+            throw new RepositoryException("Artifact file not found: " + filePath);
+        }
+        try {
+            return Files.newInputStream(filePath);
+        } catch (IOException e) {
+            throw new RepositoryException("Failed to read artifact file: " + filePath, e);
+        }
+    }
 
+    // Direct JSON serialization helper
+    private String serializeMetadata(ArtifactMetadata meta) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{\n");
+        sb.append("  \"groupId\": \"").append(meta.getArtifact().getGroupId()).append("\",\n");
+        sb.append("  \"artifactId\": \"").append(meta.getArtifact().getArtifactId()).append("\",\n");
+        sb.append("  \"version\": \"").append(meta.getArtifact().getVersion()).append("\",\n");
+        sb.append("  \"extension\": \"").append(meta.getExtension()).append("\",\n");
+        sb.append("  \"dependencies\": [\n");
 
+        List<Dependency> deps = meta.getDependencies();
+        for (int i = 0; i < deps.size(); i++) {
+            Dependency d = deps.get(i);
+            sb.append("    {\n");
+            sb.append("      \"groupId\": \"").append(d.getArtifact().getGroupId()).append("\",\n");
+            sb.append("      \"artifactId\": \"").append(d.getArtifact().getArtifactId()).append("\",\n");
+            sb.append("      \"version\": \"").append(d.getArtifact().getVersion()).append("\",\n");
+            sb.append("      \"scope\": \"").append(d.getScope()).append("\",\n");
+            sb.append("      \"optional\": ").append(d.isOptional()).append("\n");
+            sb.append("    }").append(i < deps.size() - 1 ? "," : "").append("\n");
+        }
+
+        sb.append("  ]\n");
+        sb.append("}");
+        return sb.toString();
+    }
 
     private String extractValue(String json, String key) {
         String pattern = "\"" + key + "\":";
