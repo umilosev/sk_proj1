@@ -8,8 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/publisher-cli" />
             <option value="$PROJECT_DIR$/repository-api" />
             <option value="$PROJECT_DIR$/repository-core" />
+            <option value="$PROJECT_DIR$/resolver-cli" />
             <option value="$PROJECT_DIR$/storage-local" />
           </set>
         </option>
