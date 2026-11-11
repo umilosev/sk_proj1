@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dece60d0-984e-4add-9971-f06a42920935" name="Changes" comment="Updating relevant build files for PublisherCLI and RepositoryCore">
+      <change afterPath="$PROJECT_DIR$/resolver-cli/src/main/java/app/ResolverApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage-network/src/main/java/provider/NetworkRepositoryStorageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage-network/src/main/resources/META-INF/services/api.provider.RepositoryStorageProvider" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage-local/src/main/resources/META-INF/services/api.provider.RepositoryStorageProvider" beforeDir="false" afterPath="$PROJECT_DIR$/storage-local/src/main/resources/META-INF/services/api.provider.RepositoryStorageProvider" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="53" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/publisher-cli">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/repository-api">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/repository-core">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/resolver-cli">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/storage-local">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sk_prj1" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sk_prj1" type="f1a62948:ProjectNode" />
+                <item name="resolver-cli" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sk_prj1" type="f1a62948:ProjectNode" />
+                <item name="resolver-cli" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sk_prj1" type="f1a62948:ProjectNode" />
+                <item name="resolver-cli" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="sk_prj1" type="f1a62948:ProjectNode" />
+                <item name="resolver-cli" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;umilosev&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/umilosev/sk_proj1&quot;,
+    &quot;accountId&quot;: &quot;5d8aa39d-ac24-4611-9f7d-a9065c459c23&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/storage-local/src/main/resources/META-INF/services/api.provider.RepositoryStorageProvider" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.331108160356599" />
+      <entry key="MS500" value="2.4606830749831827" />
+      <entry key="S2" value="4.785225563690437" />
+      <entry key="S5" value="8.487105103531363" />
+      <entry key="S10" value="13.38849234448385" />
+      <entry key="S30" value="22.16061636476567" />
+      <entry key="S60" value="26.554795833493564" />
+      <entry key="M2" value="29.697895840319692" />
+      <entry key="M5" value="33.185820978448405" />
+      <entry key="M10" value="35.41997643984795" />
+      <entry key="M15" value="36.42103065882859" />
+      <entry key="M30" value="37.60067160687415" />
+      <entry key="H1" value="38.26995350816425" />
+      <entry key="H2" value="38.626981440033354" />
+      <entry key="H4" value="38.81143958828815" />
+      <entry key="D1" value="38.96828383287663" />
+      <entry key="W1" value="38.99546197071544" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.2968874126717096" />
+      <entry key="MS500" value="2.446761341263294" />
+      <entry key="S2" value="4.777296733575539" />
+      <entry key="S5" value="8.480177744413073" />
+      <entry key="S10" value="13.38166968401101" />
+      <entry key="S30" value="22.155357777069298" />
+      <entry key="S60" value="26.551182761764487" />
+      <entry key="M2" value="29.695638980783713" />
+      <entry key="M5" value="33.184568510258714" />
+      <entry key="M10" value="35.41919936715638" />
+      <entry key="M15" value="36.42046370168537" />
+      <entry key="M30" value="37.60035822852048" />
+      <entry key="H1" value="38.26978812327147" />
+      <entry key="H2" value="38.62689640080691" />
+      <entry key="H4" value="38.811396458973775" />
+      <entry key="D1" value="38.96827655795557" />
+      <entry key="W1" value="38.995460929290864" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3KljsMvMZvu8dNEAHHCxQUQPDAW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build repository-api.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build repository-core.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build sk_prj1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sk_prj1 [:publisher-cli:app.PublisherApp.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sk_prj1 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.sk_prj1 [shadowJar].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Uros/Desktop/faks/3. godina/zimski semestar/sk/2026/prj1/sk_prj1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Uros/Desktop/faks/3. godina/zimski semestar/sk/2026/prj1/sk_prj1/storage-local/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.34221038&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
+  }
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle clean" />
+      <command value="gradle shadowJar" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.sk_prj1 [shadowJar]">
+    <configuration name="PublisherApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="app.PublisherApp" />
+      <module name="sk_prj1.publisher-cli.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sk_prj1 [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="sk_prj1 [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="shadowJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="sk_prj1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="sk_prj1" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.sk_prj1 [shadowJar]" />
+        <item itemvalue="Gradle.sk_prj1 [clean]" />
+        <item itemvalue="Application.PublisherApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dece60d0-984e-4add-9971-f06a42920935" name="Changes" comment="" />
+      <created>1792139257504</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1792139257504</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Set up main project through Idea template example" />
+    <MESSAGE value="Set up basic Repository Core" />
+    <MESSAGE value="Perform a build after removing some modules" />
+    <MESSAGE value="Set up the Dependency class" />
+    <MESSAGE value="Set up the RepositoryConfig class" />
+    <MESSAGE value="Refactor Artifact class" />
+    <MESSAGE value="Refactor Dependency class" />
+    <MESSAGE value="Create ArtifactMetadata class" />
+    <MESSAGE value="Create RepositoryException class" />
+    <MESSAGE value="Create RepositoryStorageProvider interface for future use" />
+    <MESSAGE value="Perform refactor on Artifact and Dependency" />
+    <MESSAGE value="Implement ConflictResolver interface" />
+    <MESSAGE value="Implement NearestToRootResolver" />
+    <MESSAGE value="Implement NewestVersionResolver" />
+    <MESSAGE value="Change gradle.xml, removing publisher-cli for now" />
+    <MESSAGE value="Implement basic version of PublisherEngine" />
+    <MESSAGE value="Implement basic overrides for LocalRepositoryStorageProvider" />
+    <MESSAGE value="Implement publishArtifact and serializeMetadata functions" />
+    <MESSAGE value="Implement fetchArtifact" />
+    <MESSAGE value="Implement fetchMetadata and deserializeMetadata as a helper function" />
+    <MESSAGE value="Implement listProjects and listVersions functions" />
+    <MESSAGE value="Set up ServiceLoader for storage-local" />
+    <MESSAGE value="Set up PublisherApp" />
+    <MESSAGE value="Set up Gradle files" />
+    <MESSAGE value="Updating relevant build files for PublisherCLI and RepositoryCore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating relevant build files for PublisherCLI and RepositoryCore" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/repository-api/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/repository-core/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/storage-local/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/publisher-cli/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/storage-local/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

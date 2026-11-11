@@ -1,0 +1,15 @@
+{
+  "groupId": "org.example",
+  "artifactId": "sample-lib",
+  "version": "1.0.0",
+  "extension": "jar",
+  "dependencies": [
+    {
+      "groupId": "org.example",
+      "artifactId": "core-lib",
+      "version": "2.1.0",
+      "scope": "compile",
+      "optional": false
+    }
+  ]
+}
