@@ -1,0 +1,1 @@
+org.example:sample-lib:1.0.0
